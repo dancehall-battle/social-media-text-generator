@@ -67,12 +67,13 @@ function generateCaption(battle) {
 
   let when;
   const startDate = new Date(battle.start);
+  const today = new Date();
 
   if (isYesterday(startDate)) {
     when = ' yesterday';
   } else if (isThisWeek(startDate, { weekStartsOn: 1 })) {
     when = ' this week';
-  } else if (isWeekend(startDate) && differenceInWeeks(new Date(), startDate) === 1) {
+  } else if (isWeekend(startDate) && (differenceInWeeks(today, startDate) === 0 || (isWeekend(today) && differenceInWeeks(today, startDate) === 1))) {
     when = ' last weekend';
   } else {
     when = ' **WHEN**';
