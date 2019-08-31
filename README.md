@@ -4,11 +4,11 @@ This tool generates text for Instagram and Twitter for posts about winners.
 
 ## Requirements
 - Node.js
-- npm
+- yarn
 
 ## Install
-Install the dependencies via `npm install`.
-Install the tool globally via `npm link`.
+Install the dependencies via `yarn install`.
+Install the tool globally via `yarn global add file:$(pwd)`.
 
 ## Run
 Execute `node index.js [battle-iri]`, 
