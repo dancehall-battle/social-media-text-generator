@@ -19,19 +19,19 @@ async function main() {
   }
 }
 
-function generateCaption(battle) {
-  let instagramCaption = `🏆 @${battle.hasWinner[0].instagram}`;
-  let twitterDescription = `🏆 ${battle.hasWinner[0].name}`;
-  let hashtags = [];
+let hashtags = [];
 
-  if (battle.hasWinner[0].country !== '') {
-    const {emoji, name} = emojiFlags.countryCode(battle.hasWinner[0].country);
-    instagramCaption += ` ${emoji}`;
-    twitterDescription += ` ${emoji}`;
-    hashtags.push('#' + name.toLowerCase());
+function generateCaption(battle) {
+  const textsFirstWinner = generateTextsForWinner(battle.hasWinner[0]);
+  let instagramCaption = `🏆 ${textsFirstWinner.instagram}`;
+  let twitterDescription = `🏆 ${textsFirstWinner.twitter}`;
+
+  if (battle.participants === '2') {
+    const textsSecondWinner = generateTextsForWinner(battle.hasWinner[1]);
+    instagramCaption += ` and ${textsSecondWinner.instagram}`;
+    twitterDescription += ` and ${textsSecondWinner.twitter}`;
   }
 
-  hashtags.push('#' + battle.hasWinner[0].name.toLowerCase().replace(/[' ]/g, ''));
   hashtags.push(`#${battle.participants}vs${battle.participants}`);
 
   if (battle.name) {
@@ -101,6 +101,25 @@ function generateCaption(battle) {
 
   console.log('\n### Twitter ###');
   console.log(twitterDescription);
+}
+
+function generateTextsForWinner(winner) {
+  let instagram = `@${winner.instagram}`;
+  let twitter = `${winner.name}`;
+
+  if (winner.country !== '') {
+    const {emoji, name} = emojiFlags.countryCode(winner.country);
+    instagram += ` ${emoji}`;
+    twitter += ` ${emoji}`;
+    hashtags.push('#' + name.toLowerCase());
+  }
+
+  hashtags.push('#' + winner.name.toLowerCase().replace(/[' ]/g, ''));
+
+  return {
+    instagram,
+    twitter
+  }
 }
 
 async function queryTPF(battleIRI){
