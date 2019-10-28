@@ -104,7 +104,14 @@ function generateCaption(battle) {
 }
 
 function generateTextsForWinner(winner) {
-  let instagram = `@${winner.instagram}`;
+  let instagram;
+
+  if (winner.instagram && winner.instagram !== '') {
+    instagram = `@${winner.instagram}`;
+  } else {
+    instagram = `${winner.name}`;
+  }
+
   let twitter = `${winner.name}`;
 
   if (winner.country !== '') {
