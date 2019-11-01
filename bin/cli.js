@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const generateBattleText = require('../lib/generate-battle-text');
-const generateUpcomingText = require('../lib/generate-upcoming-events');
+const generateBattleText = require('../lib/battle-winner');
+const generateUpcomingText = require('../lib/upcoming-events');
 
 program
   .command('battle <url>')
@@ -15,6 +15,10 @@ program
   .command('upcoming <date>')
   .description('Generate texts for Instagram and Twitter for upcoming events.')
   .action((date) => {
+    if (date.split('-').length - 1 === 1) {
+      date += '-01';
+    }
+
     generateUpcomingText(date);
   });
 
