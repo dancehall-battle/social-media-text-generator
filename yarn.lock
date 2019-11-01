@@ -1036,11 +1036,6 @@ create-hash@^1.2.0:
     ripemd160 "^2.0.1"
     sha.js "^2.4.0"
 
-csv-parse@^4.4.1:
-  version "4.4.5"
-  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.4.5.tgz#383255357a766c220be049e4f1f2c3016eb9ac66"
-  integrity sha512-koPV9m9AjNJCK3ig4ErgRJalZsLxWI7NP0Fd3+CO9hgDZt3FSljTeESnfWTbyRc8qk/3/LgX1s5naDqLxiuK9w==
-
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
@@ -1048,10 +1043,10 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-date-fns@^1.30.1:
-  version "1.30.1"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
-  integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
+date-fns@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.6.0.tgz#a5bc82e6a4c3995ae124b0ba1a71aec7b8cbd666"
+  integrity sha512-F55YxqRdEfP/eYQmQjLN798v0AwLjmZ8nMBjdQvNwEE3N/zWVrlkkqT+9seBlPlsbkybG4JmWg3Ee3dIV9BcGQ==
 
 debug@^3.0.0:
   version "3.2.6"
@@ -1290,6 +1285,17 @@ graphql-ld@^1.0.0:
     graphql-to-sparql "^2.0.0"
     jsonld-context-parser "^1.2.0"
     sparqlalgebrajs "^1.5.2"
+    sparqljson-to-tree "^2.0.0"
+
+graphql-ld@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/graphql-ld/-/graphql-ld-1.0.1.tgz#9865094134c30a8529e8604a29c33abb8d67618b"
+  integrity sha512-nt8wzsp16ezuVVtpue2WLz+6EobaqNrPHbDLGqoAoCPPzlOImue73E8Wnzmt2mD4KKERGrJP6RweBv4uPDClyQ==
+  dependencies:
+    "@types/rdf-js" "^2.0.1"
+    graphql-to-sparql "^2.0.0"
+    jsonld-context-parser "^1.2.0"
+    sparqlalgebrajs "^2.0.0"
     sparqljson-to-tree "^2.0.0"
 
 graphql-to-sparql@^2.0.0:
@@ -1715,6 +1721,11 @@ n3@^1.0.0, n3@^1.1.1:
   resolved "https://registry.yarnpkg.com/n3/-/n3-1.2.0.tgz#4d04e953007438f8e39635e13562dcfa66fb1e9b"
   integrity sha512-3VZD31lRyG2JoAa7imyhAIUZbqaZk4FSsa5QenNjUhNNJKomMLcwuhAOyl+i/suT7UB2H16Ta/7tSUP+Hkq/EQ==
 
+n3@^1.0.4:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/n3/-/n3-1.3.0.tgz#9359ccac435d397fd815094f58739fb969a824bd"
+  integrity sha512-qTbZPDpEc/+dUHMpC/WUi4bQbFdnKsb2ra/bE+pWdSvshzQeZLhCYtKQk4kQytTn2b625//eDBZYNda2wBjcfw==
+
 negotiate@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/negotiate/-/negotiate-1.0.1.tgz#35ac8b5672f7b05faa10bf0261342eb1120370fd"
@@ -1972,6 +1983,17 @@ sparqlalgebrajs@^1.1.0, sparqlalgebrajs@^1.5.1, sparqlalgebrajs@^1.5.2:
     rdf-string "^1.3.1"
     sparqljs "^2.2.1"
 
+sparqlalgebrajs@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/sparqlalgebrajs/-/sparqlalgebrajs-2.1.0.tgz#1e56c1308af48378ebf958f602620de8296f4041"
+  integrity sha512-7Au010F8vqLn9nCJUo5M8wnlYBftUwjFLxPt+5MEdFguDAJEfdkGoLdqJQVWZ1H+Dn7lDSqIj29sVWZWJ7jnxw==
+  dependencies:
+    "@rdfjs/data-model" "^1.1.1"
+    fast-deep-equal "^2.0.1"
+    minimist "^1.2.0"
+    rdf-string "^1.3.1"
+    sparqljs "^3.0.0"
+
 sparqlee@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/sparqlee/-/sparqlee-1.2.0.tgz#67025de1b1807ddfa8abd9712084cf5a8d56d21c"
@@ -1992,6 +2014,13 @@ sparqljs@^2.0.3, sparqljs@^2.2.1:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/sparqljs/-/sparqljs-2.2.3.tgz#6eb7f5f69b27b99d3b646e89271c048bd61d9293"
   integrity sha512-lrzSQadbkiQk4O6RjXJjec/EevVIsnAfbNK3t8XJtocogNojfQM7KC/UttyRTAq4IOXa0vRVoFTRapcbgFVRWg==
+
+sparqljs@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/sparqljs/-/sparqljs-3.0.0.tgz#bc1f8ba39084b3ed8bece27ef60e860fa989c451"
+  integrity sha512-uPlGML5IWfex1Up2YSA2LnvEJjyL87KCNXQ2vDnDbgraWKivy/pHxarlJA+6NUWFllNgN+1LmWFzanTRg8mhZg==
+  dependencies:
+    n3 "^1.0.4"
 
 sparqljson-parse@^1.5.0:
   version "1.5.1"

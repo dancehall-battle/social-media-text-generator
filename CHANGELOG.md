@@ -7,8 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+### Added
+- Generate Instagram and Twitter text for upcoming events
+
 ### Fixed
 - Use commando for battle
+
+### Removed
+- Unused dependency: csv-parse
 
 ## [0.0.2] - 2019-10-28
 
