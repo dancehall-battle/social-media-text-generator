@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Generate Instagram and Twitter text for upcoming events (see [issue 9](https://github.com/dancehall-battle/social-media-text-generator/issues/9))
 - Add organisers to battle winner's Instagram text (see [issue 7](https://github.com/dancehall-battle/social-media-text-generator/issues/7))
+- Event url at end of Twitter text (see [issue 13](https://github.com/dancehall-battle/social-media-text-generator/issues/13))
 
 ### Fixed
 - Use commando for battle
