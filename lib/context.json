@@ -20,5 +20,8 @@
   "participants":    "dhb:amountOfParticipants",
   "Event": "dhb:DanceEvent",
   "Battle": "dhb:DanceBattle",
-  "Dancer": "dhb:Dancer"
+  "Dancer": "dhb:Dancer",
+  "items": "schema:itemListElement",
+  "dancer": "schema:item",
+  "position": "schema:position"
 }

@@ -3,6 +3,7 @@
 const program = require('commander');
 const generateBattleText = require('../lib/battle-winner');
 const generateUpcomingText = require('../lib/upcoming-events');
+const generateRankingText = require('../lib/rankings');
 
 program
   .command('battle <url>')
@@ -20,6 +21,15 @@ program
     }
 
     generateUpcomingText(date);
+  });
+
+program
+  .command('ranking')
+  .description('Generate texts for dancer and country rankings.')
+  .option('-t, --top', 'Number of top ranked spots to include.')
+  .option('-w, --what', 'Ranking to use.')
+  .action(cmdObj => {
+    generateRankingText(cmdObj);
   });
 
 program.parse(process.argv);

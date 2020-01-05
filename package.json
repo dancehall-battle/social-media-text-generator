@@ -18,6 +18,7 @@
     "follow-redirects": "^1.7.0",
     "fs-extra": "^8.1.0",
     "graphql-ld": "^1.0.1",
-    "graphql-ld-comunica": "^1.0.0"
+    "graphql-ld-comunica": "^1.0.0",
+    "utils": "https://github.com/dancehall-battle/utils-js"
   }
 }
