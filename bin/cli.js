@@ -28,8 +28,8 @@ program
   .description('Generate texts for dancer and country rankings.')
   .option('-t, --top', 'Number of top ranked spots to include.')
   .option('-w, --what', 'Ranking to use.')
-  .action(cmdObj => {
-    generateRankingText(cmdObj);
+  .action((top, ranking) => {
+    generateRankingText({top, ranking});
   });
 
 program.parse(process.argv);
