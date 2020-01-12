@@ -16,6 +16,7 @@
   "hasBattle":    "dhb:hasBattle",
   "atEvent":    {  "@reverse": "dhb:hasBattle" },
   "country":    "dhb:representsCountry",
+  "rankedCountry": "schema:item",
   "inviteOnly":    "dhb:inviteOnly",
   "participants":    "dhb:amountOfParticipants",
   "Event": "dhb:DanceEvent",

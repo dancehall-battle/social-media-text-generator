@@ -4,6 +4,7 @@ const program = require('commander');
 const generateBattleText = require('../lib/battle-winner');
 const generateUpcomingText = require('../lib/upcoming-events');
 const DancerRanking = require('../lib/dancer-ranking');
+const CountryRanking = require('../lib/country-ranking');
 
 program
   .command('battle <url>')
@@ -33,6 +34,12 @@ program
       const ranking = new DancerRanking();
 
       ranking.getText(parseInt(top));
+    } else if (what === 'country') {
+      const ranking = new CountryRanking();
+
+      ranking.getText(parseInt(top));
+    } else {
+      console.error('Incorrect use of -w. Only "dancer" and "country" are allowed.');
     }
   });
 
