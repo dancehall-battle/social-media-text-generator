@@ -16,9 +16,13 @@
   "hasBattle":    "dhb:hasBattle",
   "atEvent":    {  "@reverse": "dhb:hasBattle" },
   "country":    "dhb:representsCountry",
+  "rankedCountry": "schema:item",
   "inviteOnly":    "dhb:inviteOnly",
   "participants":    "dhb:amountOfParticipants",
   "Event": "dhb:DanceEvent",
   "Battle": "dhb:DanceBattle",
-  "Dancer": "dhb:Dancer"
+  "Dancer": "dhb:Dancer",
+  "items": "schema:itemListElement",
+  "dancer": "schema:item",
+  "position": "schema:position"
 }
