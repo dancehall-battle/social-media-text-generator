@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+## [1.0.0] - 2020-01-17
+
 ### Added
 - Generate Instagram and Twitter text for upcoming events (see [issue 9](https://github.com/dancehall-battle/social-media-text-generator/issues/9))
 - Add organisers to battle winner's Instagram text (see [issue 7](https://github.com/dancehall-battle/social-media-text-generator/issues/7))
@@ -27,4 +29,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Use name when no Instagram is available for winner (see [issue 3](https://github.com/dancehall-battle/social-media-text-generator/issues/3))
 
+[1.0.0]: https://github.com/dancehall-battle/social-media-text-generator/compare/v0.0.2...v1.0.0
 [0.0.2]: https://github.com/dancehall-battle/social-media-text-generator/compare/v0.0.1...v0.0.2
