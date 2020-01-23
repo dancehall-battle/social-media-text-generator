@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+### Fixed
+- getOrganiserInstagram is not a function
+
 ## [1.0.0] - 2020-01-17
 
 ### Added
