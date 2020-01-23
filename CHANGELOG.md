@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 - getOrganiserInstagram is not a function
+- GraphQL-LD context in getOrganizerInstagram function
 
 ## [1.0.0] - 2020-01-17
 
