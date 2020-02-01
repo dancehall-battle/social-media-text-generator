@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+### Added
+- Include gender in hashtags of battle (see [issue 21](https://github.com/dancehall-battle/social-media-text-generator/issues/21))
+
 ### Fixed
 - getOrganiserInstagram is not a function
 - GraphQL-LD context in getOrganizerInstagram function
