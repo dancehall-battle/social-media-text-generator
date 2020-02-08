@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 - Include gender in hashtags of battle (see [issue 21](https://github.com/dancehall-battle/social-media-text-generator/issues/21))
+- Points to captions for top rankings (see [issue 23](https://github.com/dancehall-battle/social-media-text-generator/issues/23))
 
 ### Fixed
 - getOrganiserInstagram is not a function
