@@ -24,5 +24,6 @@
   "Dancer": "dhb:Dancer",
   "items": "schema:itemListElement",
   "dancer": "schema:item",
-  "position": "schema:position"
+  "position": "schema:position",
+  "points": "dhb:points"
 }
