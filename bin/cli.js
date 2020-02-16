@@ -29,7 +29,12 @@ program
   .description('Generate texts for dancer and country rankings.')
   .option('-t, --top', 'Number of top ranked spots to include.')
   .option('-w, --what', 'Ranking to use.', 'dancer')
-  .action((top, what) => {
+  .action((cmdOb, optionsArray) => {
+    const what = optionsArray[1];
+    const top = optionsArray[0];
+
+    console.log(what);
+
     if (what === 'dancer') {
       const ranking = new DancerRanking();
 
