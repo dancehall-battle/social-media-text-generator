@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - GraphQL-LD context in getOrganizerInstagram function
 - Number is missing from event name in hashtags (see [issue 18](https://github.com/dancehall-battle/social-media-text-generator/issues/18))
 - Update dependencies
+- Different order of options not supported for ranking command (see [issue 25](https://github.com/dancehall-battle/social-media-text-generator/issues/25))
 
 ## [1.0.0] - 2020-01-17
 
