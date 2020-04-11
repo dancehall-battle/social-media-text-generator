@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+## [1.1.0] - 2020-04-11
+
 ### Added
 - Include gender in hashtags of battle (see [issue 21](https://github.com/dancehall-battle/social-media-text-generator/issues/21))
 - Points to captions for top rankings (see [issue 23](https://github.com/dancehall-battle/social-media-text-generator/issues/23))
@@ -41,5 +43,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Use name when no Instagram is available for winner (see [issue 3](https://github.com/dancehall-battle/social-media-text-generator/issues/3))
 
+[1.1.0]: https://github.com/dancehall-battle/social-media-text-generator/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/dancehall-battle/social-media-text-generator/compare/v0.0.2...v1.0.0
 [0.0.2]: https://github.com/dancehall-battle/social-media-text-generator/compare/v0.0.1...v0.0.2
