@@ -1,6 +1,7 @@
 {
   "schema": "http://schema.org/",
   "dhb": "https://dancehallbattle.org/ontology/",
+  "ov": "http://open.vocab.org/terms/",
   "type":  { "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" },
   "label":  { "@id": "http://www.w3.org/2000/01/rdf-schema#label" },
   "name":  "schema:name",
@@ -24,5 +25,7 @@
   "Dancer": "dhb:Dancer",
   "items": "schema:itemListElement",
   "dancer": "schema:item",
-  "position": "schema:position"
+  "position": "schema:position",
+  "points": "dhb:points",
+  "twitter": "ov:twitter-id"
 }

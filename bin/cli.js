@@ -27,9 +27,11 @@ program
 program
   .command('ranking')
   .description('Generate texts for dancer and country rankings.')
-  .option('-t, --top', 'Number of top ranked spots to include.')
-  .option('-w, --what', 'Ranking to use.', 'dancer')
-  .action((top, what) => {
+  .option('-t, --top <int>', 'Number of top ranked spots to include.')
+  .option('-w, --what <string>', 'Ranking to use (dancer or country).', 'dancer')
+  .action((cmdOb) => {
+    const {what, top} = cmdOb;
+
     if (what === 'dancer') {
       const ranking = new DancerRanking();
 
