@@ -15,7 +15,7 @@
     "commander": "5.0.0",
     "date-fns": "^2.6.0",
     "emoji-flags": "^1.2.0",
-    "follow-redirects": "^1.7.0",
+    "follow-redirects": "^1.14.8",
     "fs-extra": "^8.1.0",
     "graphql-ld": "^1.0.1",
     "graphql-ld-comunica": "^1.0.0",
